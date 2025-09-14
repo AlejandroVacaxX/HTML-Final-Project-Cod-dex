@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Restaurante La Vaca Loca</title>
+    <!--I use this name because my last name is Vaca which in inglish means Cow 🐮-->
+</head>
+
+<body>
+    <header>
+        <!--Logo-->
+        <div class="header">
+
+            <b>
+                <ul>
+                    <li><img id="header-img" src="assets/cortes-de-carne-chilango-1.jpg" alt="header-img"></li>
+                </ul>
+                <ul>
+                    <li><a href="#suggestions"> Suggestions </a></li>
+                </ul>
+                <ul>
+                    <li><a href="#menu"> Menu </a></li>
+                    <li><a href="#order-form"> Order Form </a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.codedex.io/@AlejandroxX" target="_blank"> Codédex </a></li>
+                </ul>
+            </b>
+        </div>
+    </header>
+
+
+    <main>
+        <h1>LA VACA</h1>
+        <!--Here im gonna put the images of the food-->
+        <section class="img-move-side">
+            <button id="left"></button>
+            <img src="assets/cortes-de-carne-chilango-1.jpg" width="100%" alt="food" class="imagen">
+            <button id="right"></button>
+        </section>
+        <h2>MENU</h2>
+        <section class="menu">
+
+            <article class="platillo">
+                <img src="assets/tacos-1.jpg" alt="taco de costilla de res">
+                <h3>Taco de Costilla de Res</h3>
+                <P>Rib taco in a corn tortilla</P>
+                <P><i>20 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-2.jpg" alt="taco de Suadero">
+                <h3>Taco de Suadero</h3>
+                <P>Beff taco in a corn tortilla</P>
+                <P><i>20 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-3.jpg" alt="taco de Longaniza">
+                <h3>Taco de Longaniza</h3>
+                <P>ground pork with chili and spices</P>
+                <P><i>20 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-4.jpeg" alt="taco de Tripa">
+                <h3>Taco de Tripa</h3>
+                <P>beef small intestine fried in lard</P>
+                <P><i>20 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-5.jpg" alt="taco de Cabeza">
+                <h3>Taco de cabeza de res</h3>
+                <P>Beef Head in a corn tortilla</P>
+                <P><i>20 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-6.jpg" alt="taco de Ryb-Eye">
+                <h3>Ryb-Eye</h3>
+                <P>Ryb-Eye taco</P>
+                <P><i>40 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-7.jpg" alt="taco de Arrachera">
+                <h3>Taco de Arrachera</h3>
+                <P>grilled skirt steak on 2 corn tortillas</P>
+                <P><i>40 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-8.jpg" alt="taco de Pastor">
+                <h3>Taco de Pastor</h3>
+                <P>spiced pork cooked on a spit</P>
+                <P><i>20 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/tacos-9.jpg" alt="taco de Carnitas">
+                <h3>Taco de Carnitas</h3>
+                <P>pork confit in its own fat</P>
+                <P><i>30 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/quesadilla.jpg" alt="Quesadilla">
+                <h3>Quesadilla de Oaxaca</h3>
+                <P>Corn tortilla with cheese from Oaxaca</P>
+                <P><i>30 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/taco-pecao.jpg" alt="Volcanes">
+                <h3>Taco Gobernador</h3>
+                <P>Fried fish with veggies in a corn tortilla</P>
+                <P><i>50 mxn</i></P>
+            </article>
+            <article class="platillo">
+                <img src="assets/birria.jpg" alt="Birria">
+                <h3>Plato de Birria</h3>
+                <P>A typical dish from Guadalajara. Spicy goat broth with goat meat.</P>
+                <P><i>150 mxn</i></P>
+            </article>
+
+            </div>
+
+
+        </section>
+        <h2>PLACE YOUR ORDER</h2>
+        <section id="order-form" class="order-form">
+
+            <form action="" method="">
+                <article>
+                    <div class="take-order">
+                        <label for="taco-costilla">Taco de costilla de res</label>
+                        <input type="number" min="0" maxlength="30">
+                        <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                </article>
+                <br><br>
+                <label for="taco-costilla">Taco de Suadero</label>
+                <input type="number" min="0" maxlength="30">
+                <article>
+                    <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                </article>
+                <br><br>
+                <label for="taco-costilla">Taco de Longaniza</label>
+                <input type="number" min="0" maxlength="30">
+                <article>
+                   <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                </article>
+                <br><br>
+                <label for="taco-costilla">Taco de Tripa</label>
+                <input type="number" min="0" maxlength="30">
+                <article>
+                    <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                </article>
+                <br><br>
+                <label for="taco-costilla">Taco de cabeza de res</label>
+                <input type="number" min="0" maxlength="30">
+                <article>
+                   <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                </article>
+                <br><br>
+                <label for="taco-costilla">Taco de Rib-eye</label>
+                <input type="number" min="0" maxlength="30">
+                <article>
+                    <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                </article>
+                <br><br>
+                <label for="taco-costilla">Taco de Arrachera</label>
+                <input type="number" min="0" maxlength="30">
+                <article>
+                   <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                </article>
+                <br><br>
+                <label for="taco-costilla">Taco de Pastor</label>
+                <input type="number" min="0" maxlength="30">
+
+                <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                <br><br>
+                <label for="taco-costilla">Taco de Carnitas</label>
+                <input type="number" min="0" maxlength="30">
+                <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                <br><br>
+                <label for="taco-costilla">Quesadilla de Oaxaca</label>
+                <input type="number" min="0" maxlength="30">
+              <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                <br><br>
+                <label for="taco-costilla">Taco Gobernador</label>
+                <input type="number" min="0" maxlength="30">
+               <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                <br><br>
+                <label for="taco-costilla">Birria</label>
+                <input type="number" min="0" maxlength="30">
+              <div class="acompañamiento">
+                            <label> <input type="checkbox" name="extra" value="limon">Limones</label>
+                                <label> <input type="checkbox" name="extra" value="cebolla">Cebolla (Onion) </label>
+                                    <label> <input type="checkbox" name="extra" value="cilantro">Cilantro (Parsley) </label>
+                                        <label> <input type="checkbox" name="extra" value="roja">Salsa Roja (Red
+                                            Salsa) </label>
+                                            <label> <input type="checkbox" name="extra" value="verde">Salsa Verde
+                                                (Green Salsa) </label>
+                        </div>
+                <br><br>
+                <label for="for-special-requests">For Special Requests</label>
+                <textarea row="30px" cols="55px" name="special-plates" id="special-plates"
+                    placeholder="La tortilla mas dorada de lo normal"></textarea>
+
+                </div>
+
+
+                </div>
+                <input type="button" value="Go To Checkout">
+            </form>
+
+        </section>
+        <section id="suggestions" class="suggestions">
+            <h2>SUGGESTIONS</h2>
+
+            <div class="platillos">
+                <h3>Quesadilla de Suadero</h3>
+                <P>Oaxaca cheese quesadilla with 200g of suadero meat. The house favorite.</P>
+
+            </div>
+            <div class="platillos">
+                <h3>Taco Gobernador</h3>
+                <P>Sierra fish taco, coated in flour and accompanied by spicy coleslaw</P>
+
+            </div>
+            <div class="platillos">
+                <h3>Birria</h3>
+                <P>The goat spends 8 hours in our pots to achieve the most tender meat you will ever see in your
+                    life.</P>
+
+            </div>
+            <div class="platillos">
+                <h3>Taco de Ryb-Eye</h3>
+                <P>Our most prestigious taco. It describes itself: a gorgeous cut of beef on two freshly made
+                    tortillas.</P>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer">
+
+            <div class="uno">
+                <p>Made with love by 🇲🇽 @AlejandroxX 🇲🇽</p>
+            </div>
+            <div id="social-media" class="uno">
+                <p><a href="https://www.instagram.com/alejandro_vxx17/">Instagram</a></p>
+                <p><a href="https://www.codedex.io/@AlejandroxX" target="_blank">Codédex</a></p>
+            </div>
+            <div id="warning" class="uno">
+                <p>Aviso de privacidad</p>
+                <p>Terminos y condiciones</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
